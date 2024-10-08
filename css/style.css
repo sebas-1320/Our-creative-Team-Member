@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+/* Creamos variables de css*/
+:root{
+    --primary-color: #ff6500;
+    --secundary-color: #1e3e62;
+}
+section{
+    width: 80%;
+    margin: 0% auto;
+    padding: 120px 80px;
+}
+section .fila{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+section .fila article{
+    width: 50%;
+}
+section .fila h2{
+    color: var(--primary-color);
+    font-size: 32px;
+}
+section .fila h1{
+    color: var(--secundary-color);
+    font-size: 50px;
+}
+section .fila p{
+    color: #999;
+    font-size: 20px;
+    padding-top: 36px;
+}
+section .fila2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+section .fila2 article{
+    width: 22%;
+    background: #F6F4F4;
+    border-radius: 20px;
+    transition: 1s;
+}
+section .fila2 img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.fila2 article h3{
+    color:var(--secundary-color);
+    font-size: 24px;
+    padding: 20px 8px 10px;
+}
+.fila2 article h4{
+    font-size: 20px;
+    color: var(--secundary-color-color);
+    font-size: 300;
+    padding-bottom: 10px;
+}
+.fila2 .iconos{
+    padding: 0 8px 20px;
+}
+.fila2 i{
+    font-size: 30px;
+    color: #999;
+    margin: 0 5px;
+    transition: 1s;
+}
+.fila2 article:hover{
+    box-shadow: 0 0 20px 0 #ff650078;
+    transform: scale(1.05);
+}
+.fila2 article:hover i{
+    color: var(--primary-color);
+    transition: 1s;
+}
+/* vercion respinsive table */
+@media  screen and (min-width: 768px) and (max-width: 1024px){
+
+    section{
+        width: 100%;
+    }
+    
+    section .fila article{
+        width: 100%;
+    }
+    section .fila2 article{
+        width: 40%;
+        margin-bottom: 40px;
+    }
+}
+
+/* vercion respinsive celular */
+@media  screen and (min-width: 320px) and (max-width: 767px){
+    section{
+        width: 100%;
+    }
+    section .fila article{
+        width: 100%;
+    }
+    section .fila2 article{
+        width: 88%;
+        margin: 0 auto 40px;
+    }
+}
